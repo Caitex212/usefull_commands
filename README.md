@@ -2,13 +2,13 @@
 This repository contains personal notes and command references for setting up and configuring my Fedora Hyprland installation.
 
 Content:
-* 📷 [Mobile as Webcam](#mobile-as-webcam)
-* 🖥️ [Mobile as Second Monitor](#mobile-as-second-monitor)
-* 📶 [Connect ADB Wirelessly](#connect-adb-wirelessly)
+- [Mobile as Webcam](#mobile-as-webcam)
+- [Mobile as Second Monitor](#mobile-as-second-monitor)
+- [Connect ADB Wirelessly](#connect-adb-wirelessly)
 
 ---
 
-## 📷 Mobile as Webcam
+## Mobile as Webcam
 
 1. Add a virtual webcam:
 
@@ -26,7 +26,7 @@ Content:
 
 ---
 
-## 🖥️ Mobile as Second Monitor
+## Mobile as Second Monitor
 
 1. Install Moonlight on your mobile device.
 
@@ -52,7 +52,7 @@ hyprctl output remove virtual01
 
 ---
 
-## 📶 Connect ADB Wirelessly
+## Connect ADB Wirelessly
 
 1. Connect your phone to the PC via USB.
 
