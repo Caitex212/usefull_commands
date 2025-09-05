@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Prompt for output filename
+output=$(zenity --entry --title="Merge PDFs" --text="Enter the name for the merged PDF:")
+
+# Exit if no name given
+[ -z "$output" ] && exit 1
+
+# Ensure it ends with .pdf
+[[ "$output" != *.pdf ]] && output="$output.pdf"
+
+# Use pdfunite with selected files
+pdfunite "$@" "$output"
+
+# Notify when done
+notify-send "Merged PDFs saved as: $output"

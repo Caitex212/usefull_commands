@@ -1,0 +1,20 @@
+#!/bin/bash
+# Nautilus script to OCR selected PDFs or images (English + German)
+# Requires: ocrmypdf, Tesseract with eng+deu trained data
+
+notify-send "OCR started"
+for FILE in "$@"; do
+    DIR="$(dirname "$FILE")"
+    BASENAME="$(basename "$FILE")"
+    NAME="${BASENAME%.*}"
+    OUTPUT="$DIR/${NAME}_OCR.pdf"
+
+    # Run OCRmyPDF
+    ocrmypdf \
+        -l eng+deu \
+        --rotate-pages \
+        --force-ocr \
+	--image-dpi 300 \
+        "$FILE" "$OUTPUT"
+    notify-send "OCR complete" "$OUTPUT"
+done
