@@ -1,5 +1,4 @@
-# Fedora Hyprland Setup Notes
-This repository contains personal notes and command references for setting up and configuring my Fedora Hyprland installation.
+# Linux commands I like and don't want to forget
 
 Content:
 - [Mobile as Webcam](#mobile-as-webcam)
